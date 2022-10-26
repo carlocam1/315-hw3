@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin-bottom: 16px;
+}
+
+html, body {
+    height: 100%;
+}
+
+.site-container {
+    margin: 0 auto;
+    max-width: 1250px;
+    min-height: 500px;
+    // background-color: bisque;
+}
+
+@font-face {
+    font-family: GillSans;
+    src: url(../css/fonts/GillSans.ttc);
+}
+
+@font-face {
+    font-family: PTSerif-Bold;
+    src: url(../css/fonts/PTSerif-Bold.ttf);
+}
+
+@font-face {
+    font-family: PTSerif-BoldItalic;
+    src: url(../css/fonts/PTSerif-BoldItalic.ttf);
+}

@@ -1,0 +1,15 @@
+{
+  "name": "315-hw3",
+  "version": "1.0.0",
+  "description": "Browser page has an image gallery. when hovering over image a buton appears. When browser is less than 960px the button shows all the time otherwise hides.",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server"
+  },
+  "author": "Carlos Ocampo",
+  "license": "ISC"
+}

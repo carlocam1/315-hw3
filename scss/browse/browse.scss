@@ -1,0 +1,183 @@
+.browse {
+    max-width: 1250px;
+    min-height: 600px;
+    padding-top: 100px;
+    // background-color: aqua;
+
+    .hero-image {
+        margin: 0 auto;
+        max-width: 1250px;
+        min-height: 400px;
+        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.30), rgba(0, 0, 0, 0.40)) ,url(../images/music.jpg);   
+    }
+
+    .lessons {
+        margin: 0 auto;
+        max-width: 850px;
+        min-height: 400px;
+        // background-color:brown;
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        h1 {
+            font-size: 40px;
+            font-family: PTSerif-BoldItalic;
+        }
+        
+    .photo-gallery {
+        .lessons-container {
+            display: flex;
+            font-family: GillSans;
+            font-style: italic;
+            width: 400px;
+            min-height: 200px;
+            // background-color: cornflowerblue;
+            margin-bottom: 15px;
+            justify-content: space-between;
+            .left {
+                position: relative;
+                max-width: 200px;
+                min-height: 200px;
+                border-radius: 25px;
+                // background-color: antiquewhite;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                // margin-right: 50px;
+
+                img {
+                    width: 200px;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 25px;
+                }
+            }
+
+            .right {
+                max-width: 150px;
+                // min-height: 200px;
+                // background-color:aqua;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                p {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+            }
+        }
+    }
+
+    }   
+}
+.button-holder {
+    // background-color: burlywood;
+    display: flex;
+}
+
+.button {
+    // background-color:aqua;
+    // background-color: coral;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.50));
+    border-radius: 30px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 13px;
+    font-family: GillSans;
+    font-style: italic;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.button-view {
+    position: absolute;
+    // background-color: coral;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.70), rgba(0, 0, 0, 0.70));
+    border-radius: 30px;
+    cursor: pointer;
+    width: 80px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.hide-view {
+    display: none;
+}
+
+.left:hover .hide-view {
+    display: flex;
+}
+
+@media only screen and (max-width: 960px){
+    .left .hide-view {
+        display: flex;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .browse {
+        .lessons {
+            // background-color: aqua;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .photo-gallery {
+            .lessons-container {
+                flex-direction: column;
+                align-items: center;
+                .left {
+                    max-width: 400px;
+                    min-height: 400px;
+                    // background-color: cadetblue;
+                    img {
+                        width: 400px;
+                        height: 400px;
+                    }
+
+                    .button-view {
+                        width: 170px;
+                        height: 62px;
+                        font-size: 25px;
+                        
+                    }
+                }
+
+                .right {
+                    max-width: 400px;
+                    // height: 200px;
+                    margin-top: 20px;
+                    text-align: center;
+                }
+
+                
+            }
+
+            .button {
+                // background-color: aquamarine;
+                width: 170px;
+                height: 62px;
+                font-size: 25px;
+                margin-left: 0;
+            }
+        }
+
+        .button-holder {
+            margin-left: 0px;
+            justify-content: space-evenly;
+            // background-color: aliceblue;
+        }
+
+        }
+    }   
+}
